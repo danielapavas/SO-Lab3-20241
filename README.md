@@ -1,5 +1,9 @@
 # SO-Lab3-20241: Paralelización de la función SAXPY.
 
+## Miembros del grupo
+* DANIELA ANDREA PAVAS BEDOYA, CC 1192741700, Ingeniería de Sistemas
+* GIOVANI CARDONA MARÍN, CC 1035913434, Ingeniería de Sistemas
+
 ## Objetivos
 
 > Paralelizar el código presentado haciendo uso de hilos con la librería pthreads.
