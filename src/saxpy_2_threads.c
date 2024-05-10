@@ -135,13 +135,37 @@ int main(int argc, char* argv[]){
 	 */
 	gettimeofday(&t_start, NULL);
 
-	//SAXPY iterative SAXPY mfunction
-	for(it = 0; it < max_iters; it++){
-		for(i = 0; i < p; i++){
-			Y[i] = Y[i] + a * X[i];
-			Y_avgs[it] += Y[i];
-		}
-		Y_avgs[it] = Y_avgs[it] / p;
+	// Crear y ejecutar los hilos
+	int thread = 0;
+
+	t_args[thread].start_index = thread * chunk_size;
+	t_args[thread].end_index = (thread == n_threads - 1) ? p : (thread + 1) * chunk_size;
+	t_args[thread].max_iters = max_iters;
+	t_args[thread].X = X;
+	t_args[thread].Y = Y;
+	t_args[thread].Y_avg = (double*) malloc(sizeof(double) * max_iters);
+	t_args[thread].a = a;
+
+	pthread_create(&threads[thread], NULL, saxpy_thread, (void *)&t_args[thread]);
+
+	thread = 1;
+
+	t_args[thread].start_index = thread * chunk_size;
+	t_args[thread].end_index = (thread == n_threads - 1) ? p : (thread + 1) * chunk_size;
+	t_args[thread].max_iters = max_iters;
+	t_args[thread].X = X;
+	t_args[thread].Y = Y;
+	t_args[thread].Y_avg = (double*) malloc(sizeof(double) * max_iters);
+	t_args[thread].a = a;
+
+	pthread_create(&threads[thread], NULL, saxpy_thread, (void *)&t_args[thread]);
+
+    // Esperar a que todos los hilos terminen
+    pthread_join(threads[0], NULL);
+	pthread_join(threads[1], NULL);
+    
+	for (int it = 0; it < t_args->max_iters; it++) {
+		Y_avgs[it] = (t_args[0].Y_avg[it] + t_args[1].Y_avg[it]) / n_threads;
 	}
 
 	gettimeofday(&t_end, NULL);
