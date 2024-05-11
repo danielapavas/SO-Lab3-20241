@@ -88,6 +88,12 @@ int main(int argc, char* argv[]){
 	Y = (double*) malloc(sizeof(double) * p);
 	Y_avgs = (double*) malloc(sizeof(double) * max_iters);
 
+	// Variables para manejo de hilos
+    pthread_t threads[n_threads];
+    struct thread_args t_args[n_threads];
+	pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+    pthread_cond_t condition = PTHREAD_COND_INITIALIZER;
+    int chunk_size = p / n_threads;
 
 	for(i = 0; i < p; i++){
 		X[i] = (double)rand() / RAND_MAX;
