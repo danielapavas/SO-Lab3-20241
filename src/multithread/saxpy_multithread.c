@@ -33,6 +33,30 @@ struct thread_args {
     int done; // Variable para verificar si el hilo ha terminado
 };
 
+// Función que realiza la operación SAXPY en un fragmento de los vectores X e Y
+void *saxpy_thread(void *args) {
+    struct thread_args *t_args = (struct thread_args *)args;
+	double sum;
+	int cont = t_args->end_index - t_args->start_index;
+
+    for (int it = 0; it < t_args->max_iters; it++) {
+		sum = 0.0;
+        for (int i = t_args->start_index; i < t_args->end_index; i++) {
+            t_args->Y[i] = t_args->Y[i] + t_args->a * t_args->X[i];
+            sum += t_args->Y[i];
+        }
+
+        pthread_mutex_lock(t_args->mutex);
+        t_args->Y_avg[it] += (sum / cont);
+        pthread_cond_signal(t_args->condition);
+        pthread_mutex_unlock(t_args->mutex);
+    }
+
+	t_args->done = 1;
+
+    pthread_exit(NULL);
+}
+
 int main(int argc, char* argv[]){
 	// Variables to obtain command line parameters
 	unsigned int seed = 1;
@@ -89,11 +113,11 @@ int main(int argc, char* argv[]){
 	Y_avgs = (double*) malloc(sizeof(double) * max_iters);
 
 	// Variables para manejo de hilos
-    pthread_t threads[n_threads];
-    struct thread_args t_args[n_threads];
+	pthread_t threads[n_threads];
+	struct thread_args t_args[n_threads];
 	pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
-    pthread_cond_t condition = PTHREAD_COND_INITIALIZER;
-    int chunk_size = p / n_threads;
+	pthread_cond_t condition = PTHREAD_COND_INITIALIZER;
+	int chunk_size = p / n_threads;
 
 	for(i = 0; i < p; i++){
 		X[i] = (double)rand() / RAND_MAX;
