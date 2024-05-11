@@ -1,0 +1,299 @@
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57072.061000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57014.475000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57006.565000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57022.732000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57013.933000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57466.472000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57046.205000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 56978.891000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57043.198000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 1
+p = 10000000, seed = 1, n_threads = 1, max_iters = 1000
+Execution time: 57010.611000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28535.931000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28686.072000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28554.478000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28561.606000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28546.394000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28557.136000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28514.349000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28562.569000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28511.140000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 2
+p = 10000000, seed = 1, n_threads = 2, max_iters = 1000
+Execution time: 28529.443000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21279.705000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21498.366000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21434.906000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 22592.404000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21425.126000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21455.884000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21496.633000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21492.617000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21516.821000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 4
+p = 10000000, seed = 1, n_threads = 4, max_iters = 1000
+Execution time: 21451.127000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15472.710000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15495.461000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15531.024000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15524.552000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15539.108000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15598.234000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15467.897000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15457.915000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15630.206000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 8
+p = 10000000, seed = 1, n_threads = 8, max_iters = 1000
+Execution time: 15649.693000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15482.208000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15577.891000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15494.372000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15458.910000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15559.103000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15517.857000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15507.737000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15661.196000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15789.402000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655 
+
+threads number: 16
+p = 10000000, seed = 1, n_threads = 16, max_iters = 1000
+Execution time: 15478.323000 ms 
+Last 3 values of Y: 62.724041, 73.120437, 91.351481 
+Last 3 values of Y_avgs: 171.035899, 171.206777, 171.377655

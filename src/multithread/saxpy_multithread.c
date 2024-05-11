@@ -149,14 +149,44 @@ int main(int argc, char* argv[]){
 	 */
 	gettimeofday(&t_start, NULL);
 
-	//SAXPY iterative SAXPY mfunction
-	for(it = 0; it < max_iters; it++){
-		for(i = 0; i < p; i++){
-			Y[i] = Y[i] + a * X[i];
-			Y_avgs[it] += Y[i];
-		}
-		Y_avgs[it] = Y_avgs[it] / p;
-	}
+	// Crear y ejecutar los hilos
+    for (int i = 0; i < n_threads; i++) {
+        t_args[i].start_index = i * chunk_size;
+        t_args[i].end_index = (i == n_threads - 1) ? p : (i + 1) * chunk_size;
+        t_args[i].max_iters = max_iters;
+        t_args[i].X = X;
+        t_args[i].Y = Y;
+        t_args[i].Y_avg = Y_avgs;//(double *)malloc(sizeof(double) * max_iters);
+        t_args[i].a = a;
+        t_args[i].mutex = &mutex;
+        t_args[i].condition = &condition;
+		t_args[i].done = 0; // Inicializar done en 0
+
+        pthread_create(&threads[i], NULL, saxpy_thread, (void *)&t_args[i]);
+    }
+
+    // Esperar a que todos los hilos terminen y sincronizar los promedios
+	int all_done = 0; // Variable para verificar si todos los hilos han terminado
+    while (!all_done) {
+        all_done = 1; // Suponemos que todos los hilos han terminado
+
+        for (int i = 0; i < n_threads; i++) {
+            pthread_mutex_lock(&mutex);
+            while (!t_args[i].done) {
+                pthread_cond_wait(&condition, &mutex);
+            }
+            pthread_mutex_unlock(&mutex);
+
+            // Si algún hilo aún no ha terminado, establecemos all_done en 0
+            if (!t_args[i].done) {
+                all_done = 0;
+            }
+        }
+    }
+
+    for (int it = 0; it < max_iters; it++) {
+        Y_avgs[it] /= n_threads;
+    }
 
 	gettimeofday(&t_end, NULL);
 
